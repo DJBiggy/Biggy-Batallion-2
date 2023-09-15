@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Ql-CG-7ro">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +26,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
-                                    <segue destination="HSE-c2-hMa" kind="show" id="y94-RQ-VQd"/>
+                                    <segue destination="HSE-c2-hMa" kind="show" id="7Cf-wK-dhK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guatemala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYT-FN-Pwj">
@@ -45,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Food-->
         <scene sceneID="pt5-1y-B9V">
             <objects>
-                <viewController id="HSE-c2-hMa" sceneMemberID="viewController">
+                <viewController title="Food" id="HSE-c2-hMa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOM-RY-ZCS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,22 +62,49 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Homemade-Traditional-Pupusas-with-Curtido" translatesAutoresizingMaskIntoConstraints="NO" id="EBZ-U8-znM">
-                                <rect key="frame" x="8" y="174" width="240" height="128"/>
+                                <rect key="frame" x="8" y="120" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9O-3Y-HRb">
-                                <rect key="frame" x="129" y="362" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="v9O-3Y-HRb">
+                                <rect key="frame" x="163" y="256" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUY-uf-eWf">
+                                <rect key="frame" x="17" y="364" width="360" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Guatemalan cuisine is a vibrant and diverse tapestry of flavors that reflects the country's rich cultural heritage and natural bounty. At the heart of Guatemalan food is maize, the sacred staple crop of the Maya civilization. Corn is transformed into a variety of dishes, including tortillas, tamales, and atol, a comforting corn-based hot beverage. Guatemalan cuisine also features a wide array of colorful and flavorful ingredients, from tropical fruits like mangoes and papayas to indigenous spices and herbs like achiote and cilantro. One cannot explore Guatemalan food without savoring the famous Pepián, a hearty stew made with meats, vegetables, and a complex blend of spices. Additionally, the country's coastal regions offer delicious seafood dishes such as ceviche and tapado, showcasing the influence of the Caribbean Sea. Whether you're indulging in street food like garnachas or enjoying a traditional fiambre during the All Saints' Day celebration, Guatemalan cuisine is a delightful journey through history and culture, where each dish tells a story of the country's diverse and flavorful traditions.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lcL-Bk-DDg"/>
                         <color key="backgroundColor" red="0.39552998540000001" green="0.61358660460000003" blue="0.72158449889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zR0-2l-vRt"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zR0-2l-vRt">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="i3A-zf-oJH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Muo-NP-pEr">
+                                <rect key="frame" x="302" y="4.6666666666666679" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="1hI-Gp-cZW" kind="show" id="GE4-Nd-pys"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dab-1G-ITR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434" y="813"/>
+            <point key="canvasLocation" x="-434.35114503816794" y="812.67605633802816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bYG-Qy-3n8">
@@ -96,9 +124,114 @@
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
+        <!--Music-->
+        <scene sceneID="TcX-PU-YfO">
+            <objects>
+                <viewController title="Music" id="1hI-Gp-cZW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZo-li-EQu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gJ-J1-sI1">
+                                <rect key="frame" x="175" y="91" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guatemala-1426126_1280 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-oI-dxT">
+                                <rect key="frame" x="8" y="120" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gaby_Moreno_en_Acceso_Total_3_Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="xGv-1r-eR8">
+                                <rect key="frame" x="193" y="181" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r25-fq-NPi">
+                                <rect key="frame" x="18" y="317" width="360" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Guatemalan music is a captivating blend of indigenous, European, and African influences that reflects the country's rich multicultural heritage. Traditional Guatemalan music is deeply rooted in the Mayan heritage and features instruments like marimbas, flutes, and drums, which have been used for centuries in ceremonial and celebratory contexts. The marimba, in particular, holds a special place in Guatemalan culture, often heard at fiestas and gatherings, producing melodies that are both lively and melodious. In addition to these indigenous sounds, Guatemalan music has been shaped by Spanish colonial influences, introducing elements like the guitar and other stringed instruments. Moreover, African rhythms and percussion have left their mark on the music, especially in the coastal regions of the country. Whether it's the soulful melodies of marimba orchestras or the rhythmic beats of Afro-Caribbean-influenced styles, Guatemalan music offers a captivating and diverse sonic landscape that reflects the country's rich history and cultural diversity.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DMq-VX-dqF"/>
+                        <color key="backgroundColor" red="0.39552998540000001" green="0.61358660460000003" blue="0.72158449889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Aj-KW-nfq">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2gg-oL-rYo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Gf5-sQ-2Vv">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                            </button>
+                            <connections>
+                                <segue destination="Q6N-6Q-F4H" kind="show" id="81U-lZ-1XD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBr-6W-TEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="974"/>
+        </scene>
+        <!--Sports-->
+        <scene sceneID="Zbe-Wr-xM0">
+            <objects>
+                <viewController title="Sports" id="Q6N-6Q-F4H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Xk-un-UMF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wen-Ld-lx5">
+                                <rect key="frame" x="175" y="91" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="26-Y-SOCCER-superJumbo" translatesAutoresizingMaskIntoConstraints="NO" id="95p-Qi-mbk">
+                                <rect key="frame" x="8" y="120" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="r68142_1296x518_5-2" translatesAutoresizingMaskIntoConstraints="NO" id="Jy7-OC-edD">
+                                <rect key="frame" x="138" y="204" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiy-Wd-C4C">
+                                <rect key="frame" x="20" y="328" width="360" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Guatemala boasts a passionate sports culture that embraces a variety of activities, with football (soccer) reigning supreme as the most popular sport in the country. The nation's fervor for football is evident in the numerous local clubs, spirited matches, and the passionate support from fans. Beyond football, Guatemalans also have a deep affinity for basketball, volleyball, and athletics, with the latter producing notable athletes who have represented Guatemala on the international stage. Indigenous sports like the ancient Mayan ball game, known as "pok-ta-pok," still hold cultural significance and occasionally see revival in modern times. Additionally, the country's stunning natural landscapes provide the perfect backdrop for outdoor pursuits such as mountain biking, hiking, and white-water rafting, making Guatemala a destination for adventure sports enthusiasts. Overall, sports in Guatemala serve as a unifying force, promoting both competition and community engagement while celebrating the nation's rich cultural diversity and love for physical activity.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P0C-sk-7Wm"/>
+                        <color key="backgroundColor" red="0.39552998540000001" green="0.61358660460000003" blue="0.72158449889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lhr-sL-Cw9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6G-xo-zis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535" y="974"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="26-Y-SOCCER-superJumbo" width="2048" height="1367"/>
         <image name="Flag_of_Guatemala.svg" width="1200" height="750"/>
+        <image name="Gaby_Moreno_en_Acceso_Total_3_Cropped" width="246" height="300"/>
         <image name="Homemade-Traditional-Pupusas-with-Curtido" width="1200" height="628"/>
+        <image name="download" width="275" height="183"/>
+        <image name="guatemala-1426126_1280 (1)" width="1280" height="853"/>
+        <image name="r68142_1296x518_5-2" width="1296" height="518"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
